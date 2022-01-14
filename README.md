@@ -4,7 +4,7 @@
   <br>
 </h1>
 
-<h3 align="center">BDRC-API</h3>
+<h3 align="center">BDRC</h3>
 
 <p align="center">
   
