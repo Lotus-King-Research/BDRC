@@ -9,6 +9,10 @@ def get_model(wid, mode='resource'):
     import requests
     from rdflib import Graph, URIRef
 
+    from rdflib.namespace import Namespace
+
+    BDR = Namespace("http://purl.bdrc.io/resource/")
+
     # get the response for the data
     data_url = 'https://purl.bdrc.io/' + mode + '/' + wid + '.ttl'
     response = requests.get(data_url)

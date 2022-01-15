@@ -12,8 +12,7 @@ def get_open_pecha_catalog(n=None):
     import numpy as np
     import wrangle
     import warnings
-    import random
-    
+
     warnings.simplefilter('ignore')
     
     # get the csv vatalog
