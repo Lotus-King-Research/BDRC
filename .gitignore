@@ -4,3 +4,4 @@ bdrc/__init__.pyc
 .vscode/
 .DS_Store
 *.ipynb
+.ipynb_checkpoints/
