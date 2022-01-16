@@ -1,4 +1,4 @@
-def build_catalog(base_wids, debug=False):
+def build_catalog(base_wids, debug=False, load=False):
     
     '''Takes in wid (bdrc work id) and returns several meta-data:
     
@@ -46,12 +46,12 @@ def build_catalog(base_wids, debug=False):
     # iterate through the bdrc work ids
     for wid in tqdm.tqdm(base_wids):
 
-        # add 'M' before 'W' to all ids
+        # add 'M' to all wids starting with 'W'
         if wid.startswith('W'):
             wid = 'M' + wid
 
         # get the ttl file and build the model for the work
-        model, node = get_model(wid)
+        model, node = get_model(wid, load=load)
 
         # find the parts of the work
         nodes = get_parts(model, node)
@@ -83,7 +83,7 @@ def build_catalog(base_wids, debug=False):
         else:
             parts_temp = []
 
-            model, _node = get_model(wid, 'graph') 
+            model, _node = get_model(wid=wid, mode='graph', load=load) 
 
             for wid in wids:
                 node = URIRef(BDR + wid)
@@ -93,7 +93,7 @@ def build_catalog(base_wids, debug=False):
 
             for wid in wids:
                 
-                model, node = get_model(wid)
+                model, node = get_model(wid, load=load)
 
                 # get title
                 title_temp = get_title(model, node)
@@ -104,7 +104,7 @@ def build_catalog(base_wids, debug=False):
                 # get the content coordinates
                 location_data_id = get_content_location_id(model, node)
                 locations_wid = location_data_id[0].title().split('/')[-1].upper()
-                model, node = get_model(locations_wid)
+                model, node = get_model(locations_wid, load=load)
                 content_coodridates_temp = get_content_coordinates(model)
 
                 if debug is True:

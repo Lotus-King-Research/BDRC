@@ -28,6 +28,9 @@ def get_model(wid, mode='resource', save=False, load=False):
     data_url = 'https://purl.bdrc.io/' + mode + '/' + wid + '.ttl'
     response = requests.get(data_url)
     
+    if response.status_code == 404:
+        return None
+
     # build the graph
     model = Graph()
     model.parse(response.content, format="ttl")
