@@ -1,8 +1,14 @@
-def get_model(wid, mode='resource', save=False):
+def get_model(wid, mode='resource', save=False, load=False):
     
     '''Get model and URIRef
     
+    wid | str | BDRC id
     mode | str | `graph` or `resource`
+    save | bool | If the ttl file is to be stored on local in `ttl/`
+    load | bool | If the model is to be loaded from local file instead
+
+    NOTE: For mode files are in `ttl/resource` and `ttl/graph` respectively
+          i.e. the files have to be available in there.
     
     '''
     
@@ -10,6 +16,11 @@ def get_model(wid, mode='resource', save=False):
     from rdflib import Graph, URIRef
 
     from rdflib.namespace import Namespace
+
+    from bdrc.utils.load_model import load_model
+
+    if load is True:
+        return load_model(wid, mode)
 
     BDR = Namespace("http://purl.bdrc.io/resource/")
 
