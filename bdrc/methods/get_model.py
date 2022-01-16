@@ -1,4 +1,4 @@
-def get_model(wid, mode='resource'):
+def get_model(wid, mode='resource', save=False):
     
     '''Get model and URIRef
     
@@ -24,4 +24,9 @@ def get_model(wid, mode='resource'):
     # create node reference
     node = URIRef(BDR + wid)
     
+    if save is True:
+        f = open('ttl/' + wid, 'wb')
+        f.write(response.content)
+        f.close()
+
     return model, node

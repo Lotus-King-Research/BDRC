@@ -95,8 +95,6 @@ def build_catalog(base_wids, debug=False):
                 
                 model, node = get_model(wid)
 
-                location_data_id = get_content_location_id(model, node)
-
                 # get title
                 title_temp = get_title(model, node)
 
@@ -104,6 +102,7 @@ def build_catalog(base_wids, debug=False):
                 tree_index_temp = get_tree_index(model, node)
 
                 # get the content coordinates
+                location_data_id = get_content_location_id(model, node)
                 locations_wid = location_data_id[0].title().split('/')[-1].upper()
                 model, node = get_model(locations_wid)
                 content_coodridates_temp = get_content_coordinates(model)
