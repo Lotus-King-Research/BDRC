@@ -15,10 +15,27 @@
 
 <p align="center"> A Python wrapper for the BDRC API to access meta-data on Tibetan texts.</p>
 
-## Resources
+<p align="center">
+  <a href="#description">Description</a> •
+  <a href="#owner">Owner</a> •
+  <a href="#integrations">Integrations</a> •
+  <a href="#docs">Docs</a>
+</p>
+<hr>
 
-[BDRC Public Data Interface](http://purl.bdrc.io/index) provides direct data access to the Buddhist Digital Ontology Library.
+## Description
 
-http://purl.bdrc.io/query/table/Etexts_chunks?L_NAME=(%22%E0%BD%98%E0%BD%81%E0%BD%93%E0%BC%8B%E0%BD%86%E0%BD%BA%E0%BD%93%E0%BC%8B%22+AND+(%22%E0%BD%A0%E0%BD%BC%E0%BD%91%E0%BC%8B%E0%BD%9F%E0%BD%BA%E0%BD%A2%E0%BC%8B%22+OR+%22%E0%BD%A1%E0%BD%BA%E0%BC%8B%E0%BD%A4%E0%BD%BA%E0%BD%A6%E0%BC%8B%22))&LG_NAME=bo&LI_NAME=45&format=csv
+[BDRC's Library](https://library.bdrc.io/) provides access to over 15,000,000 scanned pages, catalogs and etexts from across the Buddhist world. The data includes reach meta-information for texts. 
 
-https://purl.bdrc.io/query/table/BLMP?L_NAME=(%22mkhan+chen%22+AND+(%22%27od+zer%22+OR+%22ye+shes%22))&LG_NAME=bo-x-ewts&I_LIM=100&pageSize=100
+## Owner
+
+- [@mikkokotila](https://github.com/mikkokotila)
+
+## Integrations
+
+- [BDRC](https://github.com/Lotus-King-Research/BDRC) (A python API wrapper to BDRC data)
+
+## Docs
+
+- [BDRC Public Data Interface](http://purl.bdrc.io/index) 
+
