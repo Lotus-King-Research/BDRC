@@ -3,3 +3,4 @@ bdrc/*/__pycache__/
 bdrc/__init__.pyc
 .vscode/
 .DS_Store
+*.ipynb
