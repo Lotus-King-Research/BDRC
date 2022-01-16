@@ -33,12 +33,12 @@ def build_catalog(base_wids, debug=False, load=False):
     BDO = Namespace("http://purl.bdrc.io/ontology/core/")
     BDR = Namespace("http://purl.bdrc.io/resource/")
 
-    from .methods.get_model import get_model
-    from .methods.get_parts import get_parts
-    from .methods.get_title import get_title
-    from .methods.get_content_location_id import get_content_location_id
-    from .methods.get_tree_index import get_tree_index
-    from .methods.get_content_coordinates import get_content_coordinates
+    from bdrc.methods.get_model import get_model
+    from bdrc.methods.get_parts import get_parts
+    from bdrc.methods.get_title import get_title
+    from bdrc.methods.get_content_location_id import get_content_location_id
+    from bdrc.methods.get_tree_index import get_tree_index
+    from bdrc.methods.get_content_coordinates import get_content_coordinates
 
     # this will be returned
     out = []
