@@ -33,7 +33,7 @@
 
 ## Integrations
 
-- [BDRC](https://github.com/Lotus-King-Research/BDRC) (A python API wrapper to BDRC data)
+- Used for building [OpenPecha-Catalog](https://github.com/Lotus-King-Research/OpenPecha-Catalog)
 
 ## Docs
 
