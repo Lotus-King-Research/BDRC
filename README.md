@@ -4,7 +4,7 @@
   <br>
 </h1>
 
-<h3 align="center">BDRC</h3>
+<h3 align="center">BDRC-API</h3>
 
 <p align="center">
   
@@ -13,7 +13,7 @@
   </a>
 </p>
 
-<p align="center"> A Python wrapper for the BDRC API to access meta-data on Tibetan texts.</p>
+<p align="center"> A Python wrapper for the BDRC to access meta-data on Tibetan texts.</p>
 
 <p align="center">
   <a href="#description">Description</a> •
@@ -25,7 +25,7 @@
 
 ## Description
 
-[BDRC's Library](https://library.bdrc.io/) provides access to over 15,000,000 scanned pages, catalogs and etexts from across the Buddhist world. The data includes reach meta-information for texts. 
+[BDRC's Library](https://library.bdrc.io/) provides access to over 15,000,000 scanned pages, catalogs and etexts from across the Buddhist world. The data includes reach meta-information for texts. **BDRC-API** is an easy-to-use API wrapper for BDRC data.
 
 ## Owner
 
