@@ -2,16 +2,16 @@
 #
 # Copyright (C) 2021 Mikko Kotila
 
-DESCRIPTION = "A Python wrapper for the BDRC API to access meta-data on Tibetan texts."
+DESCRIPTION = "A Python API wrapper for the BDRC to access meta-data on Tibetan texts."
 LONG_DESCRIPTION = """\
 """
 
 DISTNAME = 'BDRC'
 MAINTAINER = 'Mikko Kotila'
 MAINTAINER_EMAIL = 'mailme@mikkokotila.com'
-URL = 'https://github.com/Lotus-King-Trust/BDRC'
+URL = 'https://github.com/Lotus-King-Trust/BDRC-API'
 LICENSE = 'MIT'
-DOWNLOAD_URL = 'https://github.com/Lotus-King-Trust/BDRC'
+DOWNLOAD_URL = 'https://github.com/Lotus-King-Trust/BDRC-API'
 VERSION = '0.1'
 
 try:
